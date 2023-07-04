@@ -25,7 +25,7 @@ export default function ProductCard({ name, description, image, price, slug }: I
         <Typography gutterBottom variant="h5" component="div">
           {name}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="text.secondary" sx={{ minHeight: 50 }}>
           {description}
         </Typography>
         <Typography variant="body2">

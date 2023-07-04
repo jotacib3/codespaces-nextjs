@@ -35,11 +35,11 @@ Actualmente tenemos un endpoint `get` en REST API dentro del hook `useFetchProdu
 data: [
         {
           id: 'cHJvZHVjdDoyMzY4Ng==',
-          name: 'Esfera Disco sin motor',
-          description: 'Esfera Disco de espejos, fija',
-          slug: 'esfera-disco-sin-motor',
+          name: 'Refresco Rojo Popular',
+          description: 'El mejor refresco rojo de la historia',
+          slug: 'refresco-rojo-popular',
           type: 'SIMPLE',
-          image: 'https://cdn.uey.mx/uploads/RaulM-Esfera-disco-con-motor-2.png',
+          image: 'https://images.unsplash.com/photo-1568561300108-e0c35b5f7c1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sb3IlMjByb2pvfGVufDB8fDB8fHww&w=1000&q=80',
           price: '$900.00',
         },
       ],
@@ -66,12 +66,12 @@ data: [
           cursor: 'YXJyYXljb25uZWN0aW9uOjIzNjg2',
           node: {
             id: 'cHJvZHVjdDoyMzY4Ng==',
-            name: 'Esfera Disco sin motor',
-            shortDescription: 'Esfera Disco de espejos, fija',
-            slug: 'esfera-disco-sin-motor',
+            name: 'Refresco Rojo Popular',
+            shortDescription: 'El mejor refresco rojo de la historia',
+            slug: 'refresco-rojo-popular',
             type: 'SIMPLE',
             image: {
-              sourceUrl: 'https://cdn.uey.mx/uploads/RaulM-Esfera-disco-con-motor-2.png',
+              sourceUrl: 'https://images.unsplash.com/photo-1568561300108-e0c35b5f7c1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sb3IlMjByb2pvfGVufDB8fDB8fHww&w=1000&q=80',
               __typename: 'MediaItem'
             },
             price: '$900.00',
@@ -84,6 +84,7 @@ data: [
 ```
 
  Un ejemplo de query para este formato sería:
+ 
 ```ts
 const PRODUCTS_QUERY = gql`
   query GetAllProducts {
@@ -127,12 +128,12 @@ Los detalles generales de los productos se obtienen con una consulta GraphQL a l
 ```json
   {
     id: 'cHJvZHVjdDoyMzY4Ng==',
-    name: 'Esfera Disco sin motor',
-    shortDescription: 'Esfera Disco de espejos, fija',
-    slug: 'esfera-disco-sin-motor',
+    name: 'Refresco Rojo Popular',
+    shortDescription: 'El mejor refresco rojo de la historia',
+    slug: 'refresco-rojo-popular',
     type: 'SIMPLE',
     image: {
-      sourceUrl: 'https://cdn.uey.mx/uploads/RaulM-Esfera-disco-con-motor-2.png',
+      sourceUrl: 'https://images.unsplash.com/photo-1568561300108-e0c35b5f7c1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sb3IlMjByb2pvfGVufDB8fDB8fHww&w=1000&q=80',
       __typename: 'MediaItem'
     },
     price: '$900.00',
@@ -141,12 +142,12 @@ Los detalles generales de los productos se obtienen con una consulta GraphQL a l
 
   {
     id: 'cHJvZHVjdDoyMzY4Ng==',
-    name: 'mesa de billar',
+    name: 'Mesa de billar',
     shortDescription: 'Mesa para jugar billar',
     slug: 'mesa-de-billar',
     type: 'RENTABLE',
     image: {
-      sourceUrl: 'https://cdn.uey.mx/uploads/RaulM-Esfera-disco-con-motor-2.png',
+      sourceUrl: 'https://images.unsplash.com/photo-1568561300108-e0c35b5f7c1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sb3IlMjByb2pvfGVufDB8fDB8fHww&w=1000&q=80',
       __typename: 'MediaItem'
     },
     price: '$23900.00',

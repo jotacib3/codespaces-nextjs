@@ -18,11 +18,11 @@ export default rest.get('http://localhost:4000/products', (req, res, ctx) =>
       data: [
         {
           id: 'cHJvZHVjdDoyMzY4Ng==',
-          name: 'Esfera Disco sin motor',
-          description: 'Esfera Disco de espejos, fija',
-          slug: 'esfera-disco-sin-motor',
+          name: 'Refresco Rojo Popular',
+          description: 'El mejor refresco rojo de la historia',
+          slug: 'refresco-rojo-popular',
           type: 'SIMPLE',
-          image: 'https://cdn.uey.mx/uploads/RaulM-Esfera-disco-con-motor-2.png',
+          image: 'https://images.unsplash.com/photo-1568561300108-e0c35b5f7c1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sb3IlMjByb2pvfGVufDB8fDB8fHww&w=1000&q=80',
           price: '$900.00',
         },
         {

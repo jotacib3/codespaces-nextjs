@@ -1,3 +1,6 @@
+import { ApolloProvider } from '@apollo/client';
+import apolloClient from 'graphql/apollo-client';
+
 import '../global.css'
 
 if (process.env.NODE_ENV === 'development') {
@@ -7,5 +10,9 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <ApolloProvider client={apolloClient}>
+      <Component {...pageProps} />
+    </ ApolloProvider>
+  )
 }

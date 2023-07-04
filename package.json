@@ -9,17 +9,25 @@
     "@apollo/client": "^3.7.16",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@headlessui/react": "^1.7.15",
     "@mui/material": "^5.13.6",
     "@types/node": "^20.3.2",
     "@types/react": "^18.2.14",
+    "antd": "^5.6.4",
     "axios": "^1.4.0",
+    "bootstrap": "^5.3.0",
     "msw": "^1.2.2",
     "next": "latest",
+    "primereact": "^9.6.0",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.8.0",
     "react-dom": "^17.0.2",
     "typescript": "^5.1.6"
   },
   "msw": {
     "workerDirectory": "public"
+  },
+  "devDependencies": {
+    "date-fns": "^2.30.0"
   }
 }

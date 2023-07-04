@@ -54,40 +54,37 @@ data: [
 - Un ejemplo de formato de respuesta de la query GraphQL por la que se sustituirá el endpoint get del REST API es la siguiente
 
 ```json
-response: {
-        pageInfo: {
-          startCursor: 'YXJyYXljb25uZWN0aW9uOjIzNjg2',
-          hasNextPage: false,
-          hasPreviousPage: false,
-          endCursor: 'YXJyYXljb25uZWN0aW9uOjIzNjg1',
-          __typename: 'WPPageInfo'
-        },
-        edges: [
-          {
-            cursor: 'YXJyYXljb25uZWN0aW9uOjIzNjg2',
-            node: {
-              id: 'cHJvZHVjdDoyMzY4Ng==',
-              name: 'Esfera Disco sin motor',
-              shortDescription: 'Esfera Disco de espejos, fija',
-              slug: 'esfera-disco-sin-motor',
-              type: 'SIMPLE',
-              image: {
-                sourceUrl: 'https://cdn.uey.mx/uploads/RaulM-Esfera-disco-con-motor-2.png',
-                __typename: 'MediaItem'
-              },
-              price: '$900.00',
-              __typename: 'SimpleProduct'
+      pageInfo: {
+        startCursor: 'YXJyYXljb25uZWN0aW9uOjIzNjg2',
+        hasNextPage: false,
+        hasPreviousPage: false,
+        endCursor: 'YXJyYXljb25uZWN0aW9uOjIzNjg1',
+        __typename: 'WPPageInfo'
+      },
+      edges: [
+        {
+          cursor: 'YXJyYXljb25uZWN0aW9uOjIzNjg2',
+          node: {
+            id: 'cHJvZHVjdDoyMzY4Ng==',
+            name: 'Esfera Disco sin motor',
+            shortDescription: 'Esfera Disco de espejos, fija',
+            slug: 'esfera-disco-sin-motor',
+            type: 'SIMPLE',
+            image: {
+              sourceUrl: 'https://cdn.uey.mx/uploads/RaulM-Esfera-disco-con-motor-2.png',
+              __typename: 'MediaItem'
             },
-            __typename: 'RootQueryToProductConnectionEdge'
+            price: '$900.00',
+            __typename: 'SimpleProduct'
           },
-        ],
-        __typename: 'RootQueryToProductConnection'
-      }
+          __typename: 'RootQueryToProductConnectionEdge'
+        },
+      ],
+      __typename: 'RootQueryToProductConnection'
 ```
 
- Un ejemplo de query para este formato sería
-
-````ts
+ Un ejemplo de query para este formato sería:
+```ts
 const PRODUCTS_QUERY = gql`
   query GetAllProducts {
     products {
@@ -157,7 +154,7 @@ Los detalles generales de los productos se obtienen con una consulta GraphQL a l
   }
 ```
 
-Y un ejemplo de query para este formato es
+Y un ejemplo de query para este formato sería:
 
 ```ts
 const PRODUCT_DETAILS_QUERY = gql`
@@ -181,7 +178,7 @@ const PRODUCT_DETAILS_QUERY = gql`
 
 En la vista del producto rentable, vamos a mostrar los detalles de la disponibilidad. Los detalles de la disponiblidad se obtienen con una consulta REST API a `http://localhost:4000/products/availability` y la respuesta tiene el siguiente formato.
 
-- Request
+- Request:
 ```json
 {
     "product_id": 'cHJvZHVjdDoyMzY4Ng==',
@@ -190,7 +187,7 @@ En la vista del producto rentable, vamos a mostrar los detalles de la disponibil
 }
 ```
 
-- Response
+- Response:
 ```json
 [
     [

@@ -49,5 +49,4 @@ export default rest.get('http://localhost:4000/availability', (req, res, ctx) =>
             availability: availabilityPerDay
         }),
     );
-}
-);
+});
